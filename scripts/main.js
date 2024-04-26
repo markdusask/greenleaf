@@ -49,10 +49,10 @@ if (displaytype == "tincan") {
         NotAvailableError = '<h2 class="not-available-error">Start <a href="/community/ugmecurriculum">here</a></h2>';
         // window.location.href = "/community/ugmecurriculum";
     }
-    var applocationDataSource = $("#ltiSubmitForm input[name='custom_Xcustom_source_file_idX']", parent.document).val();
-    var applocationDataSourcePrev = $("#ltiSubmitForm input[name='custom_Xcustom_sourceprev_file_idX']", parent.document).val();
-    var applocationPLOSource = $("#ltiSubmitForm input[name='custom_Xcustom_PLOsource_file_idX']", parent.document).val();
-    var applocationSchedSource = $("#ltiSubmitForm input[name='custom_Xcustom_Schedsource_file_idX']", parent.document).val();
+    var applocationDataSource = 'current.txt';
+    var applocationDataSourcePrev = 'prev.txt';
+    var applocationPLOSource = 'ugme_plos.txt';
+    var applocationSchedSource = 'ugme-curriculum-schedule2022-2023.json.txt';
 
 }
 
