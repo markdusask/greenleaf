@@ -1276,7 +1276,7 @@ $(document).ready(function() {
         $('#contents').html(NotAvailableError);
         $('.AYselector').change(function() {
             console.log('Reloading new AY...');
-            window.location.href = 'https://elentra.usask.ca/community/ugmecurriculum:explorer?ay=' + this.value;
+            window.location.href = '/ay=' + this.value;
             window.location.reload();
         });
     });
