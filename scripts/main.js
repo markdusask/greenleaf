@@ -1128,7 +1128,7 @@ $(document).ready(function() {
 
         $('.AYselector').change(function() {
             console.log('Reloading new AY...');
-            window.parent.location.href = './#ay=' + this.value;
+            window.parent.location.href = '.#ay=' + this.value;
             // window.parent.location.reload();
         });
 
