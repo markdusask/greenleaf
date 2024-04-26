@@ -1129,7 +1129,7 @@ $(document).ready(function() {
         $('.AYselector').change(function() {
             console.log('Reloading new AY...');
             window.parent.location.href = '.#ay=' + this.value;
-            // window.parent.location.reload();
+            window.parent.location.reload();
         });
 
         $(showData).toggleClass('toggle_all');
