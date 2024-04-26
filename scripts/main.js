@@ -1,4 +1,4 @@
-var appversion = "Curriculum Viewer v3.2.4";
+var appversion = "Curriculum Viewer v4.0.0";
 var todaysdate = new Date(),
     locale = "en-us";
 todaysdate.setDate(todaysdate.getDate() - 1);
