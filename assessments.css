@@ -1,0 +1,450 @@
+@media only screen and (max-width: 800px) {
+    #contentBox {
+        margin: 0px!important;
+    }
+    #sideNavBox {
+        display: none;
+    }
+}
+
+@media print {
+    .toggle_all,
+    .share,
+    .totop,
+    #headbar,
+    #search,
+    .part {
+        display: none;
+    }
+    .opened {
+        display: block;
+    }
+}
+
+.elementid {
+    font-size: .70em;
+}
+
+.highlight-yellow {
+    background-color: yellow;
+}
+
+#contents {
+    margin-top: 40px;
+}
+
+.not-available-error {
+    text-align: center;
+}
+
+ul {
+    -webkit-padding-start: 25px;
+}
+
+#DeltaPlaceHolderSearchArea {
+    display: none;
+}
+
+#search input {
+    width: 20em;
+}
+
+a.share {
+    text-decoration: none;
+    color: #ffffff!important;
+    background-color: #a0a0a0;
+    font-size: .7em;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 5px;
+    border: solid 1px #858585;
+}
+
+a.objid {
+    text-decoration: none;
+    color: #1C4269!important;
+    border-bottom: black solid 1px;
+}
+
+.objectiveid {
+    background-color: #d2ffdc;
+    padding: 6px;
+    margin-left: -6px;
+    margin-top: -6px;
+    float: left;
+    margin-right: 6px;
+    position: relative;
+}
+
+.sharepopup {
+    position: absolute;
+    background-color: white;
+    border: solid 2px black;
+    top: 5px;
+    left: 5px;
+    padding: 12px;
+    color: black;
+    z-index: 100;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+#closebuttn {
+    background-color: black;
+    color: white;
+    height: 100%;
+    padding: 2px 5px 2px 5px;
+    margin-left: 10px;
+}
+
+.accordion>.part {
+    list-style-type: none;
+    background-color: #21c703;
+    color: #fff;
+    padding: 6px;
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 6px;
+}
+
+.empty {
+    margin-left: 2em;
+    border-bottom: 1px solid green;
+}
+
+.objectives {
+    display: none;
+}
+
+.objective {
+    list-style-type: none;
+    border-top: 1px solid green;
+    border-right: 1px solid green;
+    border-left: 5px solid green;
+    padding: 6px;
+    font-size: 1em;
+}
+
+.objective:last-child {
+    border-bottom: 1px solid green;
+}
+
+.objective:nth-child(even) {
+    background: #ececec;
+}
+
+.part {
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: .1em;
+    list-style-type: none;
+    position: relative;
+}
+
+.partempty:before {
+    background-image: none!important;
+}
+
+.part-1 span:before {
+    display: inline-block;
+    white-space: pre;
+    font-family: FontAwesome;
+    content: "\f078";
+    line-height: 24px;
+    margin: 5px 5px 0 5px;
+    padding: 0;
+    color: green;
+}
+
+.accordion .parts .part:before {
+    display: inline-block;
+    white-space: pre;
+    content: " ";
+    line-height: 24px;
+    margin: 5px 5px 0 5px;
+    padding: 0;
+    height: 24px;
+    width: 24px;
+    background-size: contain;
+    background-image: url("https://share.usask.ca/medicine/one45/SiteAssets/KBase/CurriculumObjectives/leaf-open-icon.jpg");
+}
+
+.accordion .part:before {
+    display: inline-block;
+    white-space: pre;
+    font-family: FontAwesome;
+    content: "\f078";
+    line-height: 24px;
+    margin: 5px 5px 0 5px;
+    padding: 0;
+    color: #fff;
+}
+
+.accordion .parts .opened:before {
+    display: inline-block;
+    white-space: pre;
+    content: " ";
+    line-height: 24px;
+    margin: 5px 5px 0 5px;
+    padding: 0;
+    height: 24px;
+    width: 24px;
+    background-size: contain;
+    background-image: url("https://share.usask.ca/medicine/one45/SiteAssets/KBase/CurriculumObjectives/leaf-close-icon.jpg");
+}
+
+.accordion .parts .emptypart:before {
+    display: inline-block;
+    white-space: pre;
+    content: " ";
+    line-height: 24px;
+    margin: 5px 5px 0 5px;
+    padding: 0;
+    height: 24px;
+    width: 24px;
+    background-size: contain;
+    background-image: url("https://share.usask.ca/medicine/one45/SiteAssets/KBase/CurriculumObjectives/leaf-empty-icon.jpg");
+}
+
+#toggle_all,
+#print-button,
+#excel-button {
+    cursor: pointer;
+    float: left;
+    background-color: grey;
+    border: solid 1px white;
+    width: fit-content;
+    margin-left: 1em;
+    font-size: 1em;
+    padding: 2px;
+}
+
+#notice-bar {
+    font-size: 1.3em;
+}
+
+#O365_NavHeader,
+#suiteBarTop {
+    display: none;
+}
+
+#headbar {
+    background-color: #096a47;
+    color: #fff;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    padding: 6px;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    font-size: 1.2em;
+}
+
+#headbar-date {
+    float: right;
+    margin-right: 1em;
+    font-weight: bold;
+}
+
+#toggle_all p {
+    background-color: white;
+    color: black;
+}
+
+.objective2 {
+    margin-left: 2em;
+}
+
+.objective4 {
+    margin-left: 4em;
+}
+
+.objective6 {
+    margin-left: 6em;
+}
+
+.objective8 {
+    margin-left: 8em;
+}
+
+.objective10 {
+    margin-left: 10em;
+}
+
+.objective1 {
+    margin-left: 2em;
+}
+
+.objective3 {
+    margin-left: 4em;
+}
+
+.objective5 {
+    margin-left: 6em;
+}
+
+.objective7 {
+    margin-left: 8em;
+}
+
+.objective9 {
+    margin-left: 10em;
+}
+
+.objective11 {
+    margin-left: 12em;
+}
+
+.part0 {}
+
+.part1 {
+    margin-left: 2em;
+}
+
+.part2 {
+    margin-left: 3em;
+}
+
+.part3 {
+    margin-left: 4em;
+}
+
+.part4 {
+    margin-left: 5em;
+}
+
+.part5 {
+    margin-left: 6em;
+}
+
+.part6 {
+    margin-left: 7em;
+}
+
+.part7 {
+    margin-left: 8em;
+}
+
+.totop {
+    position: fixed;
+    bottom: 0px;
+    right: 4em;
+    width: 80px;
+    font-size: 1.5em;
+    padding: 8px;
+    background-color: #8080ff;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.XXtablesorter-header {
+    background-image: url(data:image/gif;base64,R0lGODlhFQAJAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==);
+    background-image: url(data:image/gif;base64,R0lGODlhFQAJAIAAAP///////yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.tablesorter-header-inner {
+    margin-right: 14px;
+}
+
+table.tablesorter tbody tr.alt-row {
+    background: #f2f2f2;
+}
+
+table.tablesorter tbody tr.alt-row td,
+table.tablesorter tfoot tr th {
+    background: none;
+}
+
+#mainTable td {
+    max-width: 300px;
+}
+
+#mainTable tfoot th {
+    background: none;
+    color: black;
+    text-align: center;
+}
+
+#mainTable td,
+#mainTable th,
+#mainTable-sticky td,
+#mainTable-sticky th {
+    border: 1px solid #ddd;
+    padding: 4px;
+}
+
+#mainTable tr:hover,
+#mainTable-sticky tr:hover,
+#mainTable-sticky thead,
+#mainTable thead {
+    background-color: #ddd!important;
+}
+
+#mainTable .tablesorter-headerRow:hover,
+#mainTable-sticky .tablesorter-headerRow:hover {
+    background-color: #096a47!important;
+}
+
+#mainTable .tablesorter-headerRow,
+#mainTable-sticky .tablesorter-headerRow {
+    text-align: center;
+    cursor: pointer;
+    background-color: #096a47;
+    color: #fff;
+    padding: 6px;
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 6px;
+}
+
+.tablesorter-default th,
+.tablesorter-default thead td {
+    background-color: #096a47!important;
+    color: #FFF!important;
+}
+
+#mainTable thead td,
+#mainTable-sticky thead td {
+    overflow: hidden;
+}
+
+#mainTable thead,
+#mainTable-sticky thead,
+#mainTable-sticky foot,
+#mainTable tfoot {
+    border: #096a47 solid 2px;
+}
+
+#mainTable tbody,
+#mainTable-sticky tbody {
+    border: #096a47 solid 2px;
+}
+
+#mainTable tfoot td,
+#mainTable-sticky tfoot td {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    background-color: #7e7e7e;
+    color: white;
+    font-weight: bold;
+}
+
+#mainTable {
+    margin: auto;
+}
+
+
+/* #mainTable-sticky {
+	margin: auto;
+}
+
+.tablesorter-sticky-wrapper {
+	margin-left: 224px!important;
+} */

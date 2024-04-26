@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Assessments</title>
+    <link rel="stylesheet" type="text/css" href="assessments.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="tablesorter/css/theme.default.css">
+    <link rel="stylesheet" href="tablesorter/css/theme.jui.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script src="https://use.fontawesome.com/bed64c9862.js"></script>
+    <script type="text/javascript">
+        var displaytype = 'tincan';
+    </script>
+    <script src="scripts/md5.js"></script>
+    <script src="tablesorter/js/jquery.tablesorter.js"></script>
+    <script src="tablesorter/js/jquery.tablesorter.widgets.js"></script>
+    <script src="tablesorter/js/widgets/widget-output.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.4.6/select2.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/3.4.6/select2.min.js"></script>
+    <script src="tablesorter/js/widgets/widget-filter-formatter-select2.js"></script>
+    <script src="scripts/assessments.js"></script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-16722924-9', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script src="https://glados-egg.github.io/glados/main.js"></script>
+</head>
+
+<body>
+    <div>
+        <div class="box" style="user-select: auto;">
+            <h1 style="margin-bottom: 5px; text-align: center; user-select: auto;">View all UofS Undergraduate MD Program <a target="_blank" href="https://medicine.usask.ca/policies/student-assessment.php" style="text-decoration: underline; user-select: auto;">Assessments</a></h1>
+            <div id="notice-bar" style="text-align: center; user-select: auto;">
+            </div>
+        </div>
+        <div id="headbar" style="user-select: auto;">
+            <div id="headbar-date" style="user-select: auto;">
+                <span id="fetchdate" style="user-select: auto;"></span>
+            </div>
+            <div id="toggle_all" style="user-select: auto;">Loaded curriculum data. Processing...</div>
+            <div id="print-button" style="user-select: auto;">Print<br style="user-select: auto;"></div>
+            <div id="excel-button" style="user-select: auto;">Excel<br style="user-select: auto;"></div>
+        </div>
+        <div id="search" style="text-align: center; user-select: auto;">
+            <input type="text" placeholder="Search..." style="user-select: auto;">
+            <button type="button" style="user-select: auto;">
+           <i class="fa fa-search" style="user-select: auto;"></i></button> </div>
+        <p style="text-align: center; user-select: auto;">
+            <span class="ms-rteStyle-Accent1" style="user-select: auto;">Note: Dates/times may vary by person. Your </span>
+            <a target="_blank" href="https://one45.usask.ca/webeval/one.php?login=cas" style="text-decoration: underline; user-select: auto;"><span class="ms-rteStyle-Accent1" style="text-decoration: underline; user-select: auto;">My Calendar</span></a>
+            <span class="ms-rteStyle-Accent1" style="user-select: auto;"> will contain your pe​rsonal assessment​ schedule.</span><br class="ms-rteStyle-Accent1" style="user-select: auto;"></p>
+        <div style="text-align: center; user-select: auto;">
+        </div>
+        <div id="contents" style="user-select: auto;"> ​<br style="user-select: auto;"> ​<br style="user-select: auto;">
+            <table class="tablesorter" id="mainTable" style="user-select: auto;">
+                <thead style="user-select: auto;">
+                    <tr style="user-select: auto;">
+                        <th class="filter-select filter-onlyAvail" data-placeholder="All" style="user-select: auto;">Name</th>
+                        <th class="filter-select filter-onlyAvail" data-placeholder="All" style="user-select: auto;">Date</th>
+                        <th class="filter-select filter-onlyAvail" data-placeholder="All" style="user-select: auto;">Assessment Type</th>
+                        <th class="filter-select filter-onlyAvail" data-placeholder="All" style="user-select: auto;">Year</th>
+                        <th class="filter-select filter-onlyAvail" data-placeholder="All" style="user-select: auto;">Course</th>
+                        <th class="filter-select filter-onlyAvail" data-placeholder="All" style="user-select: auto;">Module</th>
+                    </tr>
+                </thead>
+                <tbody style="user-select: auto;">
+                </tbody>
+                <tfoot style="user-select: auto;">
+                </tfoot>
+            </table>
+        </div>
+        <div class="totop" style="user-select: auto;">^ Top<br style="user-select: auto;"></div>
+    </div>
+</body>
+
+</html>
