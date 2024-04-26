@@ -1128,7 +1128,7 @@ $(document).ready(function() {
 
         $('.AYselector').change(function() {
             console.log('Reloading new AY...');
-            window.parent.location.href = '/#ay=' + this.value;
+            window.parent.location.href = './#ay=' + this.value;
             // window.parent.location.reload();
         });
 
@@ -1276,7 +1276,7 @@ $(document).ready(function() {
         $('#contents').html(NotAvailableError);
         $('.AYselector').change(function() {
             console.log('Reloading new AY...');
-            window.location.href = '/ay=' + this.value;
+            window.location.href = './ay=' + this.value;
             window.location.reload();
         });
     });
